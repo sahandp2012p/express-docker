@@ -1,9 +1,13 @@
 FROM node:alpine
 
-COPY . /app
+WORKDIR /usr/src/app
 
-WORKDIR /app
+COPY package*.json ./
 
 RUN npm install
 
-ENV PORT=8000
+COPY . .
+
+EXPOSE 8000
+
+CMD [ "node", "server.js" ]
