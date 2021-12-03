@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sahandp2012p/express-docker/issues"
   },
-  "homepage": "https://github.com/sahandp2012p/express-docker#readme"
+  "homepage": "https://github.com/sahandp2012p/express-docker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
